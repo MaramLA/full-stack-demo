@@ -1,0 +1,118 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.entry label {
+  width: 100%;
+  color: white;
+  font-weight: bold;
+}
+.entry input {
+  width: 90%;
+  border: 2px solid rgb(93, 106, 110);
+  border-radius: 50px;
+  padding: 0.3rem 1rem;
+  outline: none;
+  text-align: center;
+  background: rgb(237, 231, 220);
+}
+
+form .top-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+form .buttons {
+  display: flex;
+  width: 100;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 60vw;
+  background: rgb(237, 231, 220);
+  padding: 3rem 3rem;
+  flex-wrap: wrap;
+  border: 2px solid rgb(93, 106, 110);
+  border-radius: 20px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(162, 189, 198);
+  padding: 2rem 0.2rem;
+  width: 12rem;
+  border: 2px solid rgb(93, 106, 110);
+  border-radius: 20px;
+  gap: 0.5rem;
+}
+
+article .detials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+article .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 0.3rem;
+}
+
+button {
+  border: 2px solid rgb(93, 106, 110);
+  border-radius: 50px;
+  background: rgb(237, 231, 220);
+  padding: 0.3rem 1rem;
+  font-weight: 700;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  cursor: pointer;
+  padding: 0.3rem 1.5rem;
+}
+
+@media screen and (max-width: 700px) {
+  form .top-section {
+    flex-direction: column;
+  }
+}
