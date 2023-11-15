@@ -37,6 +37,12 @@ const App = () => {
       const response = await axios.delete(
         `http://localhost:8080/products/${id}`
       );
+      setProduct({
+        id: null,
+        title: "",
+        price: 0,
+      });
+      setIsEdit(false);
       toast.success(response.data.message);
       fetchProducts();
     } catch (error: any) {
